@@ -1,0 +1,19 @@
+<html>
+<head>
+</head>
+<body>
+<script>
+
+function czesc(){
+var y = document.getElementById("inp1").value;
+var x = Math.floor((Math.random()*10)+1);
+if (x==y){document.getElementById("wynik").innerHTML = "ok!";}
+else {document.getElementById("wynik").innerHTML = "nie, moj numer to " + x;};
+}
+
+</script>
+<input id="inp1" type="text"/>
+<button style="width: 100px;" onclick="czesc()"/>ok</button></br>
+<p id="wynik"></p>
+</body>
+</html>
